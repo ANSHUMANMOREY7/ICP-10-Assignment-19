@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reciept</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        body {
+            background-color: #e6e6e6;
+        }
+
+        .reciept-container {
+            position: relative;
+            border: 0px gray solid;
+            border-radius: 5px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 6px 1px;
+            background-color: #fff;
+            padding: 3px;
+        }
+
+        .brand-logo {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 0;
+            width: 170px;
+            background-blend-mode: overlay;
+        }
+
+        .brand-name {
+            margin-top: -10px;
+            text-align: center;
+            font-family: "Orbitron", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-size: 55px;
+            font-style: normal;
+        }
+
+        .brand-address {
+            text-align: right;
+            padding-right: 5px;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+
+        }
+
+        .reciept-header {
+            border-bottom: 1px gray solid;
+
+        }
+
+        .body-header {
+            text-align: center;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+
+        }
+
+        .number {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .reciept{
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+      
+        }
+        .reciept-head{
+          color: gray;
+        }
+        .reciept-detail{
+          color: black;
+          border-bottom: 1px solid gray;
+          width: 20%;
+        }
+    </style>
 </head>
+
 <body>
     <div class="reciept-container">
         <div class="reciept-header">
-         <img src="./logo.jpg" alt="" class="brand-logo">
-         <h2 class="brand-name">code ocean</h2>
+            <img src="./logo.jpg" alt="" class="brand-logo">
+            <h2 class="brand-name">code ocean</h2>
+            <p class="brand-address">
+                <span class="number">401</span> sharda park,<br> khapri,<br> chandrapur- <span
+                    class="number">442401</span>
+                <br></br>
+                <span class="number">+91-8320468166 </span> <br>
+            </p>
         </div>
         <div class="reciept-body">
-
+            <h2 class="body-header">payment reciept</h2>
+            <div class="reciept">
+            <div class="reciept-head">reciept no :</div>    
+            <div class="reciept-detail number">63765
+                
+            </div>
+        </div>
         </div>
         <div class="reciept-footer">
 
         </div>
     </div>
 </body>
+
 </html>
